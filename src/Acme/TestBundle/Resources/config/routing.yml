@@ -1,0 +1,31 @@
+acme_test_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AcmeTestBundle:Default:index }
+    
+acme_test_aaaa:
+    path:     /test
+    defaults: { _controller: AcmeTestBundle:Default:test }
+    
+acme_test_newnew:
+    path:     /new
+    defaults: { _controller: AcmeTestBundle:new:new }
+    
+acme_test_persist:
+    path:     /persist
+    defaults: { _controller: AcmeTestBundle:new:persist }
+    
+acme_test_showPersist:
+    path:     /persist/{id}
+    defaults: { _controller: AcmeTestBundle:new:showPersist }
+    
+acme_test_updatePersist:
+    path:     /persist/update/{id}
+    defaults: { _controller: AcmeTestBundle:new:updatePersist }
+    
+acme_test_randomQuery:
+    path:     /random
+    defaults: { _controller: AcmeTestBundle:new:randomQuery }
+    
+acme_test_api:
+    path:     /api/{resource}
+    defaults: { _controller: AcmeTestBundle:Api:api}
